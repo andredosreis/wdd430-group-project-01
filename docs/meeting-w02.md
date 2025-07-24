@@ -1,7 +1,7 @@
 # Meeting Notes – Week 02
 
-**Date:** July 22, 2025  
-**Time:** 18:00 (local)  
+**Date:** July 16, 2025  
+**Time:** 19:00 (local)  
 **Attendees:**
 - André dos Reis  
 
