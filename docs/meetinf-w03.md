@@ -5,7 +5,7 @@
 Provide the URL to your group’s Next.js project repository:
 
 ```
-https://github.com/<team-or-username>/wdd430-group-project-01
+https://github.com/andredosreis/wdd430-group-project-01.git
 ```
 
 ## 2. Group Project Board
