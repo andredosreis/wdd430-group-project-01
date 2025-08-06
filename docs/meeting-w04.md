@@ -7,9 +7,8 @@
 
 ## Links
 
-* **Repository:** [https://github.com/your-org/wdd430-group-project-01](https://github.com/your-org/wdd430-group-project-01)
-* **Project Board:** [https://github.com/your-org/wdd430-group-project-01/projects/1](https://github.com/your-org/wdd430-group-project-01/projects/1)
-
+* **Repository:** [https://github.com/andredosreis/wdd430-group-project-01.git]
+* **Project Board:** [https://github.com/users/andredosreis/projects/3]
 ---
 
 ## ⚠️ Challenge
