@@ -1,15 +1,25 @@
-# WDD430 Group Project – Week 4 Progress Report
+# WDD430 Group Project – Week 4 Progress Report (Resubmission)
 
-**Date:** 05 Aug 2025
-**Participants:** André dos Reis
+**Date:** 05 Aug 2025
+**Participants:** André dos Reis, ChatGPT (assistant)
 
 ---
 
+## Meeting Summary
+
+* **Challenge:** Align project scope with the “Handcrafted Haven” brief by replacing invoice‑centric screens with product‑centric ones.
+* **Success:** Implemented the `/products` route with a mocked list and category filter using typed TypeScript.
+* **Insight:** Reusing the invoice list/filter component saved approximately 90 % of development time.
+
 ## Links
 
-* **Repository:** [https://github.com/andredosreis/wdd430-group-project-01.git]
-* **Project Board:** [https://github.com/users/andredosreis/projects/3]
+\\
 
+\* **\*\*Repository:\*\*** \[[https://github.com/andredosreis/wdd430-group-project-01.git](https://github.com/andredosreis/wdd430-group-project-01.git)]
+
+\* **\*\*Project Board:\*\*** \[[https://github.com/users/andredosreis/projects/3](https://github.com/users/andredosreis/projects/3)]
+
+\\
 
 ---
 
