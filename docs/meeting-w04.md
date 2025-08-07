@@ -13,13 +13,13 @@
 
 ## Links
 
-\\
 
-\* **\*\*Repository:\*\*** \[[https://github.com/andredosreis/wdd430-group-project-01.git](https://github.com/andredosreis/wdd430-group-project-01.git)]
 
-\* **\*\*Project Board:\*\*** \[[https://github.com/users/andredosreis/projects/3](https://github.com/users/andredosreis/projects/3)]
+**Repository:** \[[https://github.com/andredosreis/wdd430-group-project-01.git](https://github.com/andredosreis/wdd430-group-project-01.git)]
 
-\\
+**Project Board:** \[[https://github.com/users/andredosreis/projects/3](https://github.com/users/andredosreis/projects/3)]
+
+
 
 ---
 
