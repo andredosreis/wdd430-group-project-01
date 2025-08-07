@@ -3,13 +3,13 @@
 1. **User Login**  
    As a **user**, I want to **log in** to the dashboard so that I can access protected data.
 
-2. **View Invoices List**  
+2. **View Product List**  
    As a **user**, I want to **see a list of all invoices** so that I can review them quickly.
 
-3. **Filter Invoices**  
+3. **Filter Product**  
    As a **user**, I want to **filter invoices by status** (paid, pending, overdue) so that I can focus on what needs attention.
 
-4. **Invoice Details**  
+4. **Product Details**  
    As a **user**, I want to **click on an invoice** to view its full details (date, amount, customer) on a separate page.
 
 5. **View Customers List**  

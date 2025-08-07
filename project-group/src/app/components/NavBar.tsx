@@ -24,10 +24,10 @@ export function NavBar() {
       aria-label="Main navigation"
     >
      
-      <div className="flex space-x-7">
+      <div className=" flex space-x-4">
         <Link
           href="/login"
-          className="hover:underline transition-colors "
+          className="hover:underline transition-colors"
         >
           Login
         </Link>
@@ -36,6 +36,12 @@ export function NavBar() {
           className="hover:underline transition-colors"
         >
           Products
+        </Link>
+        <Link
+          href="/customers"
+          className="hover:underline transition-colors"
+        >
+          Customers
         </Link>
       </div>
     </nav>

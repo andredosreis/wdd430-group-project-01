@@ -5,6 +5,7 @@ import "./globals.css";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
 
+
 const geistSans = Geist_Sans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
