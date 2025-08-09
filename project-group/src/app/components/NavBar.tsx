@@ -25,6 +25,9 @@ export function NavBar() {
     >
      
       <div className=" flex space-x-4">
+        <Link href={"/"} className="hover:underline transition-colors">
+          Home
+        </Link>
         <Link
           href="/login"
           className="hover:underline transition-colors"

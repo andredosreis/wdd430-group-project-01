@@ -7,6 +7,13 @@
 
 ## Meeting Summary
 
+* Challenge: Expand the GitHub board to 10 + granular tasks and migrate code styling from Tailwind v4 (beta) to the stable v3 while keeping development uninterrupted.
+
+* Success: Deployed the /customers route with a searchable list (mock data) and restored full Tailwind styling after downgrading to v3.
+
+* Insight: Maintaining a stable toolchain (Tailwind v3) saved hours of troubleshooting and let us focus on feature delivery.
+
+
 * **Challenge:** Expand the GitHub board to 10 + granular tasks and migrate code styling from Tailwind v4 (beta) to the stable v3 while keeping development uninterrupted.
 * **Success:** Deployed the `/customers` route with a searchable list (mock data) and restored full Tailwind styling after downgrading to v3.
 * **Insight:** Maintaining a stable toolchain (Tailwind v3) saved hours of troubleshooting and let us focus on feature delivery.
