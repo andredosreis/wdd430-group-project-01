@@ -12,17 +12,22 @@ export default async function ProductDetails({
 
   return (
     <main className="p-8">
-      next/image
-      <img
-        src={product.image}
-        alt={product.title}
-        className="w-full max-w-2xl aspect-[3/2] object-cover rounded-lg border"
-      />
+  
+   
+      <div className="w-full max-w-2xl aspect-[3/4] overflow-hidden rounded-lg border">
+  <img
+    src={product.image}
+    alt={product.title}
+    className="w-full h-50 object-cover"
+  />
+</div>
+
 
       <div className="mt-4">
         <h1 className="text-2xl font-semibold capitalize">{product.title}</h1>
         <p className="text-gray-700">Category: {product.category}</p>
         <p className="text-lg font-medium mt-1">€ {product.price.toFixed(2)}</p>
+
       </div>
 
       <Link href="/products" className="inline-block mt-4 underline text-blue-600">
