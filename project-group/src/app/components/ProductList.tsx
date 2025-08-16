@@ -9,6 +9,7 @@ type Product = {
     category: string;
     image: string;
 };
+//mudança exiginda pelo versel
 type RawProduct = {
   id: string;
   title: string;

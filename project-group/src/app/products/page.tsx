@@ -14,7 +14,7 @@ type Product = {
   image: string;
 };
 
-
+// mudança esta aqui 
 type RawProduct = {
   id: string;
   title: string;
