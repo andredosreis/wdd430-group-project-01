@@ -134,7 +134,7 @@ useEffect(() => {
     loadProducts();
   }, []);
 
-  // Sync category filter with URL
+ 
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
     if (category !== "all") params.set("category", category);

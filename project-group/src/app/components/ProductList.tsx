@@ -12,7 +12,7 @@ type Product = {
 type RawProduct = {
   id: string;
   title: string;
-  price: string;       // vem do banco como string
+  price: string;       
   category: string;
   image: string;
 };
