@@ -9,6 +9,13 @@ type Product = {
     category: string;
     image: string;
 };
+type RawProduct = {
+  id: string;
+  title: string;
+  price: string;       // vem do banco como string
+  category: string;
+  image: string;
+};
 
 export default function ProductList() {
     const [products, setProducts] = useState<Product[]>([]);
@@ -17,12 +24,22 @@ export default function ProductList() {
 
     useEffect(() => {
         fetch("/api/products")
-            .then((r) => r.json())
-            .then((data: any[]) =>
-                setProducts(data.map((p) => ({ ...p, price: parseFloat(p.price) })))
-            );
+            .then((res) => res.json())
+            .then((json) => {
+                // certifica-se de que é array de RawProduct
+                if (!Array.isArray(json)) return setProducts([]);
+                const rawArray = json as RawProduct[];
+                // normaliza para Product[]
+                const normalized = rawArray.map((p) => ({
+                    id: p.id,
+                    title: p.title,
+                    price: parseFloat(p.price),
+                    category: p.category,
+                    image: p.image,
+                }));
+                setProducts(normalized);
+            });
     }, []);
-
     async function handleUpdate(e: React.FormEvent) {
         e.preventDefault();
         if (!editingId) return;

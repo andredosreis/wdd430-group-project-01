@@ -14,6 +14,16 @@ type Product = {
   image: string;
 };
 
+
+type RawProduct = {
+  id: string;
+  title: string;
+  price: string;
+  category: string;
+  image: string;
+};
+
+
 function CategoryFilter({
   categories,
   selected,
@@ -86,41 +96,41 @@ export default function ProductsPage() {
   );
 
   // Fetch products from API with error handling and normalize price to number
-  useEffect(() => {
+useEffect(() => {
     async function loadProducts() {
       setLoading(true);
       setError(null);
-
       try {
         const res = await fetch("/api/products");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
 
-        const payload = (await res.json()) as any;
-        // extrair array do payload
-        const rawArray: any[] = Array.isArray(payload)
-          ? payload
-          : Array.isArray(payload.rows)
-          ? payload.rows
-          : [];
+        let rawArray: RawProduct[] = [];
+        if (Array.isArray(json)) {
+          rawArray = json as RawProduct[];
+        } else if (
+          typeof json === "object" &&
+          json !== null &&
+          Array.isArray((json as any).rows)
+        ) {
+          rawArray = (json as { rows: RawProduct[] }).rows;
+        }
 
-        // normalizar cada item, convertendo price para number
-        const normalized: Product[] = rawArray.map((p: any) => ({
+        const normalized: Product[] = rawArray.map((p) => ({
           id: p.id,
           title: p.title,
           price: parseFloat(p.price),
           category: p.category,
           image: p.image,
         }));
-
         setProducts(normalized);
       } catch (err) {
-        console.error("Failed to load products:", err);
+        console.error(err);
         setError("Unable to load products.");
       } finally {
         setLoading(false);
       }
     }
-
     loadProducts();
   }, []);
 
