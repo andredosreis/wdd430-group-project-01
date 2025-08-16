@@ -29,7 +29,7 @@ function CustomersContent() {
 
   return (
     <main className="p-8">
-      <h1 className="text-2xl mb-4">Customers</h1>
+      <h1 className="text-2xl mb-4">Sellers</h1>
 
       <input
         type="text"

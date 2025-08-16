@@ -1,4 +1,5 @@
 //src/lib/db.ts
-import {Client } from "@vercel/postgres";
+import {sql} from "@vercel/postgres";
+export{sql};
 
-export const db = new Client()
+
